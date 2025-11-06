@@ -1,0 +1,47 @@
+↓jIfThenElse [steps.IfThenElseStep-1762339400274]: 
+  condition: username == "toto@gmail.com" && password == "1234"
+  ↓jThen [steps.ThenStep-1762339400276]: 
+    ↓authenticatedUserID [steps.SetAuthenticatedUserStep-1762338840120]: 
+      output: true
+      userid: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+          - SmartType: 
+            - ↑mode: JS
+            - →→: username
+    ↓__todo [steps.LogStep-1762339463206]: 
+      expression: '"🔑 Bienvenue " + username'
+  ↓jElse [steps.ElseStep-1762339400278]: 
+    ↓__todo [steps.LogStep-1762339410158]: 
+      expression: '"⚠️ ECHEC DE L''AUTHENTIFICATION"'
+      level: ERROR
+    ↓Error_structure [steps.XMLErrorStep-1762339900433]: 
+      code: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+          - SmartType: 
+            - ↑mode: PLAIN
+            - →→: 1
+      message: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+          - SmartType: 
+            - ↑mode: PLAIN
+            - →→: ECHEC DE L'AUTHENTIFICATION
+    ↓Remove_authenticated_user [steps.RemoveAuthenticatedUserStep-1762339921132]: 
+    ↓Return [steps.ReturnStep-1762339910913]: 
+↓username [variables.RequestableVariable-1762339002894]: 
+↓password [variables.RequestableVariable-1762339020691]: 
+↓TestLoginKO [core.TestCase]: 
+  ↓username [variables.TestCaseVariable-1762339603162]: 
+    value: toto@free.fr
+  ↓password [variables.TestCaseVariable-1762339603164]: 
+    value: 1234
+↓TestLoginNull [core.TestCase]: 
+  ↓username [variables.TestCaseVariable-1762339658404]: 
+  ↓password [variables.TestCaseVariable-1762339658406]: 
+↓TestLoginOK [core.TestCase]: 
+  ↓username [variables.TestCaseVariable-1762339240397]: 
+    value: toto@gmail.com
+  ↓password [variables.TestCaseVariable-1762339240399]: 
+    value: 1234

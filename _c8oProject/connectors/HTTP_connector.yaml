@@ -1,0 +1,17 @@
+baseDir: /3/
+https: true
+port: 443
+server: api.themoviedb.org
+↓Default_transaction [transactions.HttpTransaction]: 
+  ↑default: true
+↓searchMoviesByTitle [transactions.JsonHttpTransaction-1762248112693]: 
+  subDir: search/movie?query={movieTitle}&include_adult=false&language=fr-FR&page=1
+  ↓TestAvatar [core.TestCase]: 
+    ↓movieTitle [variables.TestCaseVariable-1762249441305]: 
+      value: Avatar
+  ↓TestInterstellar [core.TestCase]: 
+    ↓movieTitle [variables.TestCaseVariable-1762248956683]: 
+      value: Interstellar
+  ↓__header_Authorization [variables.RequestableHttpVariable-1762248263966]: 
+    value: Bearer ${PremierProjetOM.tokenTMDB.secret}
+  ↓movieTitle [variables.RequestableHttpVariable-1762248588513]: 
