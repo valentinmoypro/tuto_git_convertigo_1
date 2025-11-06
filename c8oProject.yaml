@@ -1,6 +1,6 @@
 ↑convertigo: 8.0.0.m006
 ↓tutoGit [core.Project]: 
-  comment: Convertigo NGX builder Project
+  comment: Convertigo NGX builder Project 1.0
   contextTimeout: 59
   corsOrigin: =Origin
   httpSessionTimeout: 60
