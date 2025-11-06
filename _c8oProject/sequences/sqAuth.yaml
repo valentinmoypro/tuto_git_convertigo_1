@@ -1,0 +1,22 @@
+↓jIfThenElse [steps.IfThenElseStep-1762340066269]: 
+  condition: mail == "toto@gmail.com" && password == "1234";
+  ↓jThen [steps.ThenStep-1762340070175]: 
+    ↓authenticatedUserID [steps.SetAuthenticatedUserStep-1762353490720]: 
+      output: true
+      userid: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+          - SmartType: 
+            - ↑mode: JS
+            - →→: mail
+  ↓jElse [steps.ElseStep-1762340070177]: 
+    ↓Error_structure [steps.XMLErrorStep-1762353008476]: 
+↓mail [variables.RequestableVariable-1762339017587]: 
+↓password [variables.RequestableVariable-1762339022001]: 
+↓TestTotoAuth [core.TestCase]: 
+  ↓mail [variables.TestCaseVariable-1762339248125]: 
+    required: true
+    value: toto@gmail.com
+  ↓password [variables.TestCaseVariable-1762339248127]: 
+    required: true
+    value: 1234
