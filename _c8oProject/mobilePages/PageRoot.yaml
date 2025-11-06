@@ -1,0 +1,34 @@
+inAutoMenu: false
+segment: path-to-pageroot
+title: Root
+↓PageEvent [ngx.components.UIPageEvent-1762443205941]: 
+↓Content [ngx.components.UIDynamicElement-1762443205965]: 
+  beanData: '{"ionBean":"Content"}'
+  tagName: ion-content
+  ↓TabsContainer [ngx.components.UIDynamicElement-1762443481400]: 
+    beanData: '{"ionBean":"Tabs"}'
+    tagName: ion-tabs
+    ↓TabBar [ngx.components.UIDynamicElement-1762443520772]: 
+      beanData: '{"ionBean":"TabBar"}'
+      tagName: ion-tab-bar
+      ↓TabButtonSearch [ngx.components.UIDynamicTabButton-1762443527857]: 
+        beanData: '{"ionBean":"TabButton"}'
+        tabpage: PremierProjetOM.Application.NgxApp.PageSearch
+        tagName: ion-tab-button
+        ↓Icon [ngx.components.UIDynamicElement-1762443579665]: 
+          beanData: '{"ionBean":"Icon","IconName":"source:{\"filter\":\"Icon\",\"project\":\"PremierProjetOM\",\"input\":\"\",\"model\":{\"data\":[{\"icon\":\"''search''\"}],\"path\":\"\",\"prefix\":\"\",\"suffix\":\"\",\"custom\":\"\",\"useCustom\":false}}"}'
+          tagName: ion-icon
+      ↓TabButtonWatchlist [ngx.components.UIDynamicTabButton-1762443548380]: 
+        beanData: '{"ionBean":"TabButton"}'
+        tabpage: PremierProjetOM.Application.NgxApp.PageWatchlist
+        tagName: ion-tab-button
+        ↓Icon [ngx.components.UIDynamicElement-1762443581629]: 
+          beanData: '{"ionBean":"Icon","IconName":"source:{\"filter\":\"Icon\",\"project\":\"PremierProjetOM\",\"input\":\"\",\"model\":{\"data\":[{\"icon\":\"''heart-sharp''\"}],\"path\":\"\",\"prefix\":\"\",\"suffix\":\"\",\"custom\":\"\",\"useCustom\":false}}"}'
+          tagName: ion-icon
+      ↓TabButtonProfile [ngx.components.UIDynamicTabButton-1762443560634]: 
+        beanData: '{"ionBean":"TabButton"}'
+        tabpage: PremierProjetOM.Application.NgxApp.PageProfile
+        tagName: ion-tab-button
+        ↓Icon [ngx.components.UIDynamicElement-1762443584310]: 
+          beanData: '{"ionBean":"Icon","IconName":"source:{\"filter\":\"Icon\",\"project\":\"PremierProjetOM\",\"input\":\"\",\"model\":{\"data\":[{\"icon\":\"''person''\"}],\"path\":\"\",\"prefix\":\"\",\"suffix\":\"\",\"custom\":\"\",\"useCustom\":false}}"}'
+          tagName: ion-icon

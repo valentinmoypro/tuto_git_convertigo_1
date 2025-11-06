@@ -1,5 +1,4 @@
 accessibility: Private
-authenticatedContextRequired: true
 ↓__todo [steps.LogStep-1762338250120]: 
   expression: '"### Recherche des films avec le titre : " + movieTitle + " ###"'
 ↓Call_Transaction [steps.TransactionStep-1762251657423]: 

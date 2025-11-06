@@ -163,8 +163,36 @@ Describes the mobile application global properties
 <details><summary><span style="color:DarkGoldenRod"><i>Pages</i></span></summary><blockquote><p>
 
 
-### ![](https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/ngx/components/images/pagecomponent_color_16x16.png?raw=true "PageComponent") Page
+<details><summary><b>PageProfile</b></summary><blockquote><p>
 
-My First Page as root page
+
+### ![](https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/ngx/components/images/pagecomponent_color_16x16.png?raw=true "PageComponent") PageProfile
+
+
+</p></blockquote></details>
+
+<details><summary><b>PageRoot</b></summary><blockquote><p>
+
+
+### ![](https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/ngx/components/images/pagecomponent_color_16x16.png?raw=true "PageComponent") PageRoot
+
+
+</p></blockquote></details>
+
+<details><summary><b>PageSearch</b> : Page de recherche</summary><blockquote><p>
+
+
+### ![](https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/ngx/components/images/pagecomponent_color_16x16.png?raw=true "PageComponent") PageSearch
+
+Page de recherche
+</p></blockquote></details>
+
+<details><summary><b>PageWatchlist</b></summary><blockquote><p>
+
+
+### ![](https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/ngx/components/images/pagecomponent_color_16x16.png?raw=true "PageComponent") PageWatchlist
+
+
+</p></blockquote></details>
 </p></blockquote></details>
 </p></blockquote></details>

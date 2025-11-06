@@ -11,7 +11,10 @@ For more technical informations : [documentation](./project.md)
 - [Installation](#installation)
 - [Mobile Application](#mobile-application)
     - [Pages](#pages)
-        - [Page](#page)
+        - [PageProfile](#pageprofile)
+        - [PageRoot](#pageroot)
+        - [PageSearch](#pagesearch)
+        - [PageWatchlist](#pagewatchlist)
 
 
 ## Installation
@@ -46,9 +49,15 @@ Describes the mobile application global properties
 
 ### Pages
 
-#### Page
+#### PageProfile
 
-My First Page as root page
+#### PageRoot
+
+#### PageSearch
+
+Page de recherche
+
+#### PageWatchlist
 
 
 

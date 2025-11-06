@@ -1,0 +1,200 @@
+↑isRoot: true
+comment: Page de recherche
+preloadPriority: high
+scriptContent: 
+  - xmlizable: 
+    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+      →: |
+        /*Begin_c8o_PageImport*/
+        /*End_c8o_PageImport*/
+        /*Begin_c8o_PageDeclaration*/
+        	/*End_c8o_PageDeclaration*/
+        /*Begin_c8o_PageConstructor*/
+        		/*End_c8o_PageConstructor*/
+        /*Begin_c8o_PageFunction*/
+        	/*End_c8o_PageFunction*/
+        
+segment: path-to-xfirst
+title: Recherche
+↓Header [ngx.components.UIDynamicElement-1491634212350]: 
+  beanData: '{"ionBean":"Header"}'
+  comment: Page header
+  tagName: ion-header
+  ↓ToolBar [ngx.components.UIDynamicElement-1491634231108]: 
+    beanData: '{"ionBean":"ToolBar"}'
+    tagName: ion-toolbar
+    ↓ButtonSet1 [ngx.components.UIDynamicElement-1588171103814]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:start"}'
+      tagName: ion-buttons
+      ↓BackButton [ngx.components.UIDynamicElement-1643993281257]: 
+        beanData: '{"ionBean":"BackButton"}'
+        tagName: ion-back-button
+      ↓MenuButton [ngx.components.UIDynamicElement-1588172846908]: 
+        beanData: '{"ionBean":"MenuButton"}'
+        tagName: ion-menu-button
+    ↓BarTitle [ngx.components.UIDynamicElement-1491634265317]: 
+      beanData: '{"ionBean":"BarTitle"}'
+      tagName: ion-title
+      ↓Text [ngx.components.UIText-1491634275121]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:Recherche de films
+      ↓styleEditor [ngx.components.UIStyle-1762444262280]: 
+        styleContent: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+            - com.twinsoft.convertigo.beans.common.FormatedContent: 
+              →: |
+                '    text-align: center;
+                '
+    ↓ButtonSet2 [ngx.components.UIDynamicElement-1588170811054]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:end"}'
+      tagName: ion-buttons
+      ↓Button [ngx.components.UIDynamicElement-1588170817806]: 
+        beanData: '{"ionBean":"Button"}'
+        tagName: ion-button
+        ↓Icon [ngx.components.UIDynamicElement-1588170831166]: 
+          beanData: '{"ionBean":"Icon","IconName":"plain:ellipsis-vertical"}'
+          tagName: ion-icon
+↓Content [ngx.components.UIDynamicElement-1489674805352]: 
+  beanData: '{"ionBean":"Content"}'
+  comment: Page content
+  tagName: ion-content
+  ↓SearchBar [ngx.components.UIDynamicElement-1762424164271]: 
+    beanData: |
+      '{
+       "ionBean": "Searchbar",
+       "ControlName": "plain:name1762424164271",
+       "DoubleBinding": "source:{\"filter\":\"Local\",\"project\":\"PremierProjetOM\",\"input\":\"\",\"model\":{\"data\":[{\"localObject\":\"local\"}],\"path\":\"?.search\",\"prefix\":\"\",\"suffix\":\"\",\"custom\":\"\",\"useCustom\":false}}",
+       "animated": "plain:true",
+       "searchIcon": "plain:search-sharp",
+       "placeholder": "plain:Rechercher"
+      }'
+    tagName: ion-searchbar
+    ↓Event [ngx.components.UIControlEvent-1762424755911]: 
+      attrName: (ionInput)
+      eventName: ionInput
+      ↓CallSequence [ngx.components.UIDynamicAction-1762423806856]: 
+        beanData: '{"ionBean":"CallSequenceAction","requestable":"plain:PremierProjetOM.searchByMovie"}'
+        ↓movieTitle [ngx.components.UIControlVariable-1762423843289]: 
+          comment: Définit le titre du film à chercher
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: source:{"filter":"Local","project":"PremierProjetOM","input":"","model":{"data":[{"localObject":"local"}],"path":"?.search","prefix":"","suffix":"","custom":"","useCustom":false}}
+  ↓Button [ngx.components.UIDynamicElement-1762420909660]: 
+    beanData: '{"ionBean":"Button","IonShape":"plain:round"}'
+    tagName: ion-button
+    ↓Icon [ngx.components.UIDynamicElement-1762424610832]: 
+      beanData: |
+        '{
+         "ionBean": "Icon",
+         "IconName": "source:{\"filter\":\"Icon\",\"project\":\"PremierProjetOM\",\"input\":\"\",\"model\":{\"data\":[{\"icon\":\"''search''\"}],\"path\":\"\",\"prefix\":\"\",\"suffix\":\"\",\"custom\":\"\",\"useCustom\":false}}",
+         "IconSlot": "plain:icon-only"
+        }'
+      tagName: ion-icon
+    ↓Event [ngx.components.UIControlEvent-1762420909659]: 
+  ↓ListContainer [ngx.components.UIDynamicElement-1762423278866]: 
+    beanData: '{"ionBean":"List"}'
+    tagName: ion-list
+    ↓ListHeader [ngx.components.UIDynamicElement-1762423278851]: 
+      beanData: '{"ionBean":"Listheader"}'
+      tagName: ion-list-header
+      ↓Label [ngx.components.UIDynamicElement-1762423278853]: 
+        beanData: '{"ionBean":"Label"}'
+        tagName: ion-label
+        ↓Heading [ngx.components.UIDynamicTag-1762423278855]: 
+          beanData: '{"ionBean":"Heading"}'
+          tagName: h1
+          ↓Text [ngx.components.UIText-1762423278857]: 
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:Liste des films
+    ↓Directive [ngx.components.UIControlDirective-1762423278859]: 
+      directiveIndexName: idx
+      directiveItemName: item
+      directiveSource: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: source:{"filter":"Sequence","project":"PremierProjetOM","input":"","model":{"data":[{"sequence":"PremierProjetOM.searchByMovie","marker":""}],"path":"?.movies","prefix":"","suffix":"","custom":"","useCustom":false}}
+      ↓ListItem [ngx.components.UIDynamicElement-1762423278861]: 
+        beanData: '{"ionBean":"ListItem"}'
+        tagName: ion-item
+        ↓Thumbnail [ngx.components.UIDynamicElement-1762423559543]: 
+          beanData: '{"ionBean":"Thumbnail","IonSlot":"plain:start"}'
+          tagName: ion-thumbnail
+          ↓LazyImage [ngx.components.UIDynamicElement-1762423393094]: 
+            beanData: '{"ionBean":"LazyImage","Src":"source:{\"filter\":\"Iteration\",\"project\":\"PremierProjetOM\",\"input\":\"\",\"model\":{\"data\":[{\"priority\":1762423278859}],\"path\":\"?.imgUrlFullPath\",\"prefix\":\"\",\"suffix\":\"\",\"custom\":\"\",\"useCustom\":false}}"}'
+            tagName: ion-img
+        ↓Label [ngx.components.UIDynamicElement-1762423278863]: 
+          beanData: '{"ionBean":"Label"}'
+          tagName: ion-label
+          ↓H1 [ngx.components.UIDynamicElement-1762423443844]: 
+            beanData: '{"ionBean":"Heading1"}'
+            tagName: h1
+            ↓Text1 [ngx.components.UIText-1762423278865]: 
+              textValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                  - MobileSmartSourceType: source:{"filter":"Iteration","project":"PremierProjetOM","input":"","model":{"data":[{"priority":1762423278859}],"path":"?.title","prefix":"","suffix":"","custom":"","useCustom":false}}
+          ↓Paragraph [ngx.components.UIDynamicElement-1762423743480]: 
+            beanData: '{"ionBean":"Paragraph"}'
+            tagName: p
+            ↓Text [ngx.components.UIText-1762423743479]: 
+              textValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                  - MobileSmartSourceType: source:{"filter":"Iteration","project":"PremierProjetOM","input":"","model":{"data":[{"priority":1762423278859}],"path":"?.description","prefix":"","suffix":"","custom":"","useCustom":false}}
+        ↓Grid [ngx.components.UIDynamicElement-1762425045535]: 
+          beanData: '{"ionBean":"Grid"}'
+          tagName: ion-grid
+          ↓GridRow [ngx.components.UIDynamicElement-1762425045522]: 
+            beanData: '{"ionBean":"GridRow","Height":"plain"}'
+            tagName: ion-row
+            ↓GridCol [ngx.components.UIDynamicElement-1762425045524]: 
+              beanData: |
+                '{
+                 "ionBean": "GridCol",
+                 "FlexAlignement": "plain:ion-align-self-center",
+                 "Size": "plain:12"
+                }'
+              tagName: ion-col
+              ↓Button [ngx.components.UIDynamicElement-1762425275587]: 
+                beanData: '{"ionBean":"Button","IonColor":"plain:secondary"}'
+                tagName: ion-button
+                ↓Event [ngx.components.UIControlEvent-1762425275586]: 
+                ↓Icon [ngx.components.UIDynamicElement-1762445775997]: 
+                  beanData: '{"ionBean":"Icon","IconName":"source:{\"filter\":\"Icon\",\"project\":\"PremierProjetOM\",\"input\":\"\",\"model\":{\"data\":[{\"icon\":\"''eye-outline''\"}],\"path\":\"\",\"prefix\":\"\",\"suffix\":\"\",\"custom\":\"\",\"useCustom\":false}}"}'
+                  tagName: ion-icon
+            ↓GridCol1 [ngx.components.UIDynamicElement-1762425045530]: 
+              beanData: '{"ionBean":"GridCol","FlexAlignement":"plain:ion-align-self-center"}'
+              tagName: ion-col
+              ↓Button [ngx.components.UIDynamicElement-1762425279527]: 
+                beanData: '{"ionBean":"Button"}'
+                tagName: ion-button
+                ↓Event [ngx.components.UIControlEvent-1762425279526]: 
+                ↓Icon [ngx.components.UIDynamicElement-1762445783819]: 
+                  beanData: '{"ionBean":"Icon","IconName":"source:{\"filter\":\"Icon\",\"project\":\"PremierProjetOM\",\"input\":\"\",\"model\":{\"data\":[{\"icon\":\"''heart-outline''\"}],\"path\":\"\",\"prefix\":\"\",\"suffix\":\"\",\"custom\":\"\",\"useCustom\":false}}"}'
+                  tagName: ion-icon
+          ↓FormatLayout [ngx.components.UIDynamicAttr-1762425334825]: 
+            beanData: '{"ionBean":"FormatLayout","TextAlignment":"plain:ion-text-center"}'
+            selfClose: false
+          ↓styleEditor [ngx.components.UIStyle-1762425766049]: 
+            styleContent: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                  →: |
+                    '    max-width: 180px;
+                    '
+↓PageEvent [ngx.components.UIPageEvent-1762424251734]: 
+  ↓search [ngx.components.UIDynamicAction-1762424305861]: 
+    beanData: |
+      '{
+       "ionBean": "SetLocalAction",
+       "Property": "plain:search",
+       "Value": "script:''''"
+      }'
