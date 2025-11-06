@@ -1,0 +1,75 @@
+↓Call_Transaction1 [steps.TransactionStep-1762415395597]: 
+  output: true
+  sourceTransaction: my_first_project_LG.HTTP_connector.getAllGenreById
+  ↓genreId [variables.StepVariable-1762415395600]: 
+↓genres [steps.JsonArrayStep-1762413503397]: 
+  isEnabled: false
+  key: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+      - SmartType: 
+        - ↑mode: PLAIN
+        - →→: genres
+  ↓Iterator [steps.IteratorStep-1762413510878]: 
+    sourceDefinition: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+        - com.twinsoft.convertigo.beans.common.XMLVector: 
+          - java.lang.String: 
+            - ↑value: 1762413250343
+          - java.lang.String: 
+            - ↑value: ./document/object/genres/object
+    ↓id [steps.JsonFieldStep-1762413549581]: 
+      key: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+          - SmartType: 
+            - ↑mode: PLAIN
+            - →→: id
+      value: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+          - SmartType: 
+            - ↑mode: SOURCE
+            - com.twinsoft.convertigo.beans.common.XMLVector: 
+              - java.lang.String: 
+                - ↑value: 1762413510878
+              - java.lang.String: 
+                - ↑value: ./id/text()
+    ↓name [steps.JsonFieldStep-1762413542680]: 
+      key: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+          - SmartType: 
+            - ↑mode: PLAIN
+            - →→: name
+      value: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+          - SmartType: 
+            - ↑mode: SOURCE
+            - com.twinsoft.convertigo.beans.common.XMLVector: 
+              - java.lang.String: 
+                - ↑value: 1762413510878
+              - java.lang.String: 
+                - ↑value: ./name/text()
+    ↓array [steps.JsonFieldStep-1762413982452]: 
+      isEnabled: false
+      key: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+          - SmartType: 
+            - ↑mode: PLAIN
+            - →→: array
+      value: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+          - SmartType: 
+            - ↑mode: SOURCE
+            - com.twinsoft.convertigo.beans.common.XMLVector: 
+              - java.lang.String: 
+                - ↑value: 1762413510878
+              - java.lang.String: 
+                - ↑value: ./object
+↓Read_XML [steps.ReadXMLStep-1762414808391]: 
+↓Test_getGenreById [core.TestCase]: 

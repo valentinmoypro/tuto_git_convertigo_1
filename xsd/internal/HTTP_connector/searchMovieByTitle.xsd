@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:my_first_project_LG_ns="http://www.convertigo.com/convertigo/projects/my_first_project_LG" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://www.convertigo.com/convertigo/projects/my_first_project_LG">
+    <xsd:element name="HTTP_connector__searchMovieByTitle" type="my_first_project_LG_ns:HTTP_connector__searchMovieByTitleRequestData">
+        <xsd:annotation/>
+    </xsd:element>
+    <xsd:element name="HTTP_connector__searchMovieByTitleResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="my_first_project_LG_ns:HTTP_connector__searchMovieByTitleResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="HTTP_connector__searchMovieByTitleResponseType">
+        <xsd:sequence>
+            <xsd:element name="document" type="my_first_project_LG_ns:HTTP_connector__searchMovieByTitleResponseData"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector__searchMovieByTitleRequestData">
+        <xsd:sequence>
+            <xsd:element name="__header_Authorization" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element name="movieTitle" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element name="langage" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_searchMovieByTitle_document_object_pageType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_searchMovieByTitle_document_object_results_object_adultType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_searchMovieByTitle_document_object_results_object_backdrop_pathType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_searchMovieByTitle_document_object_results_object_genre_ids_valueType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_searchMovieByTitle_document_object_results_object_genre_idsType">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="value" type="my_first_project_LG_ns:HTTP_connector_searchMovieByTitle_document_object_results_object_genre_ids_valueType"/>
+        </xsd:sequence>
+        <xsd:attribute name="length" type="xsd:byte"/>
+        <xsd:attribute default="array" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_searchMovieByTitle_document_object_results_object_idType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_searchMovieByTitle_document_object_results_object_original_languageType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_searchMovieByTitle_document_object_results_object_original_titleType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_searchMovieByTitle_document_object_results_object_overviewType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_searchMovieByTitle_document_object_results_object_popularityType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_searchMovieByTitle_document_object_results_object_poster_pathType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_searchMovieByTitle_document_object_results_object_release_dateType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_searchMovieByTitle_document_object_results_object_titleType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_searchMovieByTitle_document_object_results_object_videoType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_searchMovieByTitle_document_object_results_object_vote_averageType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_searchMovieByTitle_document_object_results_object_vote_countType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_searchMovieByTitle_document_object_results_objectType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="adult" type="my_first_project_LG_ns:HTTP_connector_searchMovieByTitle_document_object_results_object_adultType"/>
+            <xsd:element minOccurs="0" name="backdrop_path" type="my_first_project_LG_ns:HTTP_connector_searchMovieByTitle_document_object_results_object_backdrop_pathType"/>
+            <xsd:element minOccurs="0" name="genre_ids" type="my_first_project_LG_ns:HTTP_connector_searchMovieByTitle_document_object_results_object_genre_idsType"/>
+            <xsd:element minOccurs="0" name="id" type="my_first_project_LG_ns:HTTP_connector_searchMovieByTitle_document_object_results_object_idType"/>
+            <xsd:element minOccurs="0" name="original_language" type="my_first_project_LG_ns:HTTP_connector_searchMovieByTitle_document_object_results_object_original_languageType"/>
+            <xsd:element minOccurs="0" name="original_title" type="my_first_project_LG_ns:HTTP_connector_searchMovieByTitle_document_object_results_object_original_titleType"/>
+            <xsd:element minOccurs="0" name="overview" type="my_first_project_LG_ns:HTTP_connector_searchMovieByTitle_document_object_results_object_overviewType"/>
+            <xsd:element minOccurs="0" name="popularity" type="my_first_project_LG_ns:HTTP_connector_searchMovieByTitle_document_object_results_object_popularityType"/>
+            <xsd:element minOccurs="0" name="poster_path" type="my_first_project_LG_ns:HTTP_connector_searchMovieByTitle_document_object_results_object_poster_pathType"/>
+            <xsd:element minOccurs="0" name="release_date" type="my_first_project_LG_ns:HTTP_connector_searchMovieByTitle_document_object_results_object_release_dateType"/>
+            <xsd:element minOccurs="0" name="title" type="my_first_project_LG_ns:HTTP_connector_searchMovieByTitle_document_object_results_object_titleType"/>
+            <xsd:element minOccurs="0" name="video" type="my_first_project_LG_ns:HTTP_connector_searchMovieByTitle_document_object_results_object_videoType"/>
+            <xsd:element minOccurs="0" name="vote_average" type="my_first_project_LG_ns:HTTP_connector_searchMovieByTitle_document_object_results_object_vote_averageType"/>
+            <xsd:element minOccurs="0" name="vote_count" type="my_first_project_LG_ns:HTTP_connector_searchMovieByTitle_document_object_results_object_vote_countType"/>
+        </xsd:sequence>
+        <xsd:attribute default="object" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_searchMovieByTitle_document_object_resultsType">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="object" type="my_first_project_LG_ns:HTTP_connector_searchMovieByTitle_document_object_results_objectType"/>
+        </xsd:sequence>
+        <xsd:attribute name="length" type="xsd:byte"/>
+        <xsd:attribute default="array" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_searchMovieByTitle_document_object_total_pagesType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_searchMovieByTitle_document_object_total_resultsType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_searchMovieByTitle_document_objectType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="page" type="my_first_project_LG_ns:HTTP_connector_searchMovieByTitle_document_object_pageType"/>
+            <xsd:element minOccurs="0" name="results" type="my_first_project_LG_ns:HTTP_connector_searchMovieByTitle_document_object_resultsType"/>
+            <xsd:element minOccurs="0" name="total_pages" type="my_first_project_LG_ns:HTTP_connector_searchMovieByTitle_document_object_total_pagesType"/>
+            <xsd:element minOccurs="0" name="total_results" type="my_first_project_LG_ns:HTTP_connector_searchMovieByTitle_document_object_total_resultsType"/>
+        </xsd:sequence>
+        <xsd:attribute default="object" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector__searchMovieByTitleResponseData">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="object" type="my_first_project_LG_ns:HTTP_connector_searchMovieByTitle_document_objectType"/>
+            <xsd:element minOccurs="0" name="error" type="my_first_project_LG_ns:ConvertigoError"/>
+        </xsd:sequence>
+        <xsd:attribute name="connector" type="xsd:string"/>
+        <xsd:attribute name="context" type="xsd:string"/>
+        <xsd:attribute name="contextId" type="xsd:string"/>
+        <xsd:attribute name="fromStub" type="xsd:boolean"/>
+        <xsd:attribute name="fromcache" type="xsd:boolean"/>
+        <xsd:attribute name="generated" type="xsd:string"/>
+        <xsd:attribute name="project" type="xsd:string"/>
+        <xsd:attribute name="sequence" type="xsd:string"/>
+        <xsd:attribute name="signature" type="xsd:long"/>
+        <xsd:attribute name="transaction" type="xsd:string"/>
+        <xsd:attribute name="version" type="xsd:string"/>
+        <xsd:attribute name="screenclass" type="xsd:string"/>
+        <xsd:attribute name="userReference" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="ConvertigoErrorContextVariable">
+        <xsd:attribute name="name" type="xsd:string"/>
+        <xsd:attribute name="value" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="ConvertigoErrorContext">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="variable" type="my_first_project_LG_ns:ConvertigoErrorContextVariable"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ConvertigoError">
+        <xsd:sequence minOccurs="0">
+            <xsd:element name="code" type="xsd:integer"/>
+            <xsd:element name="message" type="xsd:string"/>
+            <xsd:element name="details" type="xsd:string"/>
+            <xsd:element name="context" type="my_first_project_LG_ns:ConvertigoErrorContext"/>
+            <xsd:element name="exception" type="xsd:string"/>
+            <xsd:element name="stacktrace" type="xsd:string"/>
+        </xsd:sequence>
+        <xsd:attribute name="project" type="xsd:string"/>
+        <xsd:attribute name="connector" type="xsd:string"/>
+        <xsd:attribute name="transaction" type="xsd:string"/>
+        <xsd:attribute name="sequence" type="xsd:string"/>
+        <xsd:attribute name="type">
+            <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                    <xsd:enumeration value="c8o"/>
+                    <xsd:enumeration value="project"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+        </xsd:attribute>
+    </xsd:complexType>
+</xsd:schema>

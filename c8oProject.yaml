@@ -4,7 +4,12 @@
   contextTimeout: 59
   corsOrigin: =Origin
   httpSessionTimeout: 60
+  ↓basePgsql [connectors.SqlConnector-1762335243016]: 🗏 connectors/basePgsql.yaml
+  ↓HTTP_connector [connectors.HttpConnector-1762247667619]: 🗏 connectors/HTTP_connector.yaml
   ↓void [connectors.SqlConnector]: 🗏 connectors/void.yaml
+  ↓getGenreById [sequences.GenericSequence-1762413227963]: 🗏 sequences/getGenreById.yaml
+  ↓login [sequences.GenericSequence-1762338783113]: 🗏 sequences/login.yaml
+  ↓searchMovieByTitle [sequences.GenericSequence-1762251228518]: 🗏 sequences/searchMovieByTitle.yaml
   ↓Project_reference [references.ProjectSchemaReference]: 
     comment: ngx builder template
     projectName: mobilebuilder_tpl_8_3_0_ngx=https://github.com/convertigo/c8oprj-mobilebuilder-tpl/archive/mobilebuilder_tpl_8_3_0_ngx.zip

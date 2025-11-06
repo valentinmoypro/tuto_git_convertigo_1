@@ -1,0 +1,6 @@
+jdbcDriverClassName: org.hsqldb.jdbcDriver
+jdbcURL: jdbc:hsqldb:file:<.//{my_first_project_LG.database.serveur=localhost}:5432
+jdbcUserName: admin
+jdbcUserPassword: x33377598656768e9a307b114e902ff4b
+↓Default_transaction [transactions.SqlTransaction]: 
+  ↑default: true

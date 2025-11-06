@@ -1,0 +1,41 @@
+↓jIfThenElse [steps.IfThenElseStep-1762339378774]: 
+  condition: username == "toto@gmail.com" && password == "1234"
+  ↓jThen [steps.ThenStep-1762339378776]: 
+    ↓authenticatedUserID [steps.SetAuthenticatedUserStep-1762338799249]: 
+      output: true
+      userid: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+          - SmartType: 
+            - ↑mode: JS
+            - →→: username
+  ↓jElse [steps.ElseStep-1762339378778]: 
+    ↓Error_structure [steps.XMLErrorStep-1762339406547]: 
+      message: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+          - SmartType: 
+            - ↑mode: PLAIN
+            - →→: Username ou password incorrect.
+    ↓Remove_authenticated_user [steps.RemoveAuthenticatedUserStep-1762339897700]: 
+    ↓Return [steps.ReturnStep-1762339416645]: 
+↓username [variables.RequestableVariable-1762338966782]: 
+↓password [variables.RequestableVariable-1762338969316]: 
+↓Test_Auth [core.TestCase]: 
+  ↓username [variables.TestCaseVariable-1762339237789]: 
+    value: toto@gmail.com
+  ↓password [variables.TestCaseVariable-1762339237791]: 
+    value: 1234
+↓Test_KO1_value_Null [core.TestCase]: 
+  ↓username [variables.TestCaseVariable-1762339625329]: 
+  ↓password [variables.TestCaseVariable-1762339625332]: 
+↓Test_KO_password [core.TestCase]: 
+  ↓username [variables.TestCaseVariable-1762339471432]: 
+    value: toto@gmail.com
+  ↓password [variables.TestCaseVariable-1762339471435]: 
+    value: 12345
+↓Test_KO_username [core.TestCase]: 
+  ↓username [variables.TestCaseVariable-1762339573449]: 
+    value: tata@gmail.com
+  ↓password [variables.TestCaseVariable-1762339573452]: 
+    value: 1234

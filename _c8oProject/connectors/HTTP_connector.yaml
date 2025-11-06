@@ -1,0 +1,29 @@
+baseDir: /3/
+https: true
+port: 443
+server: api.themoviedb.org
+↓Default_transaction [transactions.HttpTransaction]: 
+  ↑default: true
+↓getAllGenreById [transactions.JsonHttpTransaction-1762248101533]: 
+  subDir: genre/movie/list?language={language}
+  ↓Test_getGenreById [core.TestCase]: 
+    ↓language [variables.TestCaseVariable-1762351437140]: 
+      value: fr-FR
+    ↓genreId [variables.TestCaseVariable-1762351437142]: 
+  ↓__header_Authorization [variables.RequestableHttpVariable-1762351288425]: 
+    value: Bearer ${my_first_project_TokenTMDB.secret}
+  ↓language [variables.RequestableHttpVariable-1762351368637]: 
+    value: fr-FR
+  ↓genreId [variables.RequestableHttpVariable-1762351385912]: 
+↓searchMovieByTitle [transactions.JsonHttpTransaction-1762248101533]: 
+  subDir: search/movie?query={movieTitle}&include_adult=false&language={language}&page=1
+  ↓Test_getMovieByTitle [core.TestCase]: 
+    ↓movieTitle [variables.TestCaseVariable-1762248938486]: 
+      value: Whiplash
+    ↓language [variables.TestCaseVariable-1762250704396]: 
+      value: fr-FR
+  ↓__header_Authorization [variables.RequestableHttpVariable-1762248262882]: 
+    value: Bearer ${my_first_project_TokenTMDB.secret}
+  ↓movieTitle [variables.RequestableHttpVariable-1762248606420]: 
+  ↓language [variables.RequestableHttpVariable-1762250688308]: 
+    value: fr-FR
