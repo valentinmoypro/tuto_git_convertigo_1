@@ -1,47 +1,13 @@
 segment: path-to-pageprofile
 title: Mon profil
 ↓PageEvent [ngx.components.UIPageEvent-1762443248653]: 
-↓Header [ngx.components.UIDynamicElement-1762443248655]: 
-  beanData: '{"ionBean":"Header"}'
-  tagName: ion-header
-  ↓ToolBar [ngx.components.UIDynamicElement-1762443248657]: 
-    beanData: '{"ionBean":"ToolBar"}'
-    tagName: ion-toolbar
-    ↓ButtonSet [ngx.components.UIDynamicElement-1762443248659]: 
-      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:start"}'
-      tagName: ion-buttons
-      ↓BackButton [ngx.components.UIDynamicElement-1762443248661]: 
-        beanData: '{"ionBean":"BackButton"}'
-        tagName: ion-back-button
-      ↓MenuButton [ngx.components.UIDynamicElement-1762443248663]: 
-        beanData: '{"ionBean":"MenuButton"}'
-        tagName: ion-menu-button
-    ↓ButtonSet1 [ngx.components.UIDynamicElement-1762443248665]: 
-      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:end"}'
-      tagName: ion-buttons
-      ↓Button [ngx.components.UIDynamicElement-1762443248667]: 
-        beanData: '{"ionBean":"Button"}'
-        tagName: ion-button
-        ↓Icon [ngx.components.UIDynamicElement-1762443248669]: 
-          beanData: '{"ionBean":"Icon","IconName":"plain:ellipsis-vertical"}'
-          tagName: ion-icon
-        ↓Event [ngx.components.UIControlEvent-1762443248671]: 
-    ↓BarTitle [ngx.components.UIDynamicElement-1762443248673]: 
-      beanData: '{"ionBean":"BarTitle"}'
-      tagName: ion-title
-      ↓Text [ngx.components.UIText-1762443248675]: 
-        textValue: 
-          - xmlizable: 
-            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-            - MobileSmartSourceType: plain:Mon profil
-      ↓styleEditor [ngx.components.UIStyle-1762444334389]: 
-        styleContent: 
-          - xmlizable: 
-            - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
-            - com.twinsoft.convertigo.beans.common.FormatedContent: 
-              →: |
-                '    text-align: center;
-                '
+↓UseSharedComponent [ngx.components.UIUseShared-1762507517319]: 
+  sharedcomponent: PremierProjetOM.Application.NgxApp.myPageHeader
+  ↓pageTitle [ngx.components.UIUseVariable-1762507526976]: 
+    varValue: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+        - MobileSmartSourceType: script:'Mon profil'
 ↓Content [ngx.components.UIDynamicElement-1762443248677]: 
   beanData: '{"ionBean":"Content"}'
   tagName: ion-content

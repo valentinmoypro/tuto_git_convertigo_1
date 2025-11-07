@@ -1,0 +1,42 @@
+↓Header [ngx.components.UIDynamicElement-1762507318370]: 
+  beanData: '{"ionBean":"Header"}'
+  comment: Page header
+  tagName: ion-header
+  ↓ToolBar [ngx.components.UIDynamicElement-1762507318373]: 
+    beanData: '{"ionBean":"ToolBar"}'
+    tagName: ion-toolbar
+    ↓ButtonSet1 [ngx.components.UIDynamicElement-1762507318376]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:start"}'
+      tagName: ion-buttons
+      ↓BackButton [ngx.components.UIDynamicElement-1762507318379]: 
+        beanData: '{"ionBean":"BackButton"}'
+        tagName: ion-back-button
+      ↓MenuButton [ngx.components.UIDynamicElement-1762507318382]: 
+        beanData: '{"ionBean":"MenuButton"}'
+        tagName: ion-menu-button
+    ↓BarTitle [ngx.components.UIDynamicElement-1762507318385]: 
+      beanData: '{"ionBean":"BarTitle"}'
+      tagName: ion-title
+      ↓Text [ngx.components.UIText-1762507318388]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: source:{"filter":"Shared","project":"PremierProjetOM","input":"","model":{"data":[{"priority":1762507318366,"regular":true}],"path":"?.pageTitle","prefix":"","suffix":"","custom":"","useCustom":false}}
+      ↓styleEditor [ngx.components.UIStyle-1762507318391]: 
+        styleContent: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+            - com.twinsoft.convertigo.beans.common.FormatedContent: 
+              →: |
+                '    text-align: center;
+                '
+    ↓ButtonSet2 [ngx.components.UIDynamicElement-1762507318394]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:end"}'
+      tagName: ion-buttons
+      ↓Button [ngx.components.UIDynamicElement-1762507318397]: 
+        beanData: '{"ionBean":"Button"}'
+        tagName: ion-button
+        ↓Icon [ngx.components.UIDynamicElement-1762507318400]: 
+          beanData: '{"ionBean":"Icon","IconName":"plain:ellipsis-vertical"}'
+          tagName: ion-icon
+↓pageTitle [ngx.components.UICompVariable-1762507347929]: 

@@ -1,3 +1,4 @@
+↑isRoot: true
 inAutoMenu: false
 segment: path-to-pageroot
 title: Root
@@ -31,4 +32,11 @@ title: Root
         tagName: ion-tab-button
         ↓Icon [ngx.components.UIDynamicElement-1762443584310]: 
           beanData: '{"ionBean":"Icon","IconName":"source:{\"filter\":\"Icon\",\"project\":\"PremierProjetOM\",\"input\":\"\",\"model\":{\"data\":[{\"icon\":\"''person''\"}],\"path\":\"\",\"prefix\":\"\",\"suffix\":\"\",\"custom\":\"\",\"useCustom\":false}}"}'
+          tagName: ion-icon
+      ↓TabButtonMoney [ngx.components.UIDynamicTabButton-1762507108518]: 
+        beanData: '{"ionBean":"TabButton"}'
+        tabpage: PremierProjetOM.Application.NgxApp.PageMoney
+        tagName: ion-tab-button
+        ↓Icon [ngx.components.UIDynamicElement-1762507194474]: 
+          beanData: '{"ionBean":"Icon","IconName":"source:{\"filter\":\"Icon\",\"project\":\"PremierProjetOM\",\"input\":\"\",\"model\":{\"data\":[{\"icon\":\"''logo-bitcoin''\"}],\"path\":\"\",\"prefix\":\"\",\"suffix\":\"\",\"custom\":\"\",\"useCustom\":false}}"}'
           tagName: ion-icon

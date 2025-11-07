@@ -1,0 +1,13 @@
+segment: path-to-pagemoney
+title: Soutenez-nous
+↓PageEvent [ngx.components.UIPageEvent-1762507125933]: 
+↓UseSharedComponent [ngx.components.UIUseShared-1762507560007]: 
+  sharedcomponent: PremierProjetOM.Application.NgxApp.myPageHeader
+  ↓pageTitle [ngx.components.UIUseVariable-1762507566214]: 
+    varValue: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+        - MobileSmartSourceType: script:'Soutenez-nous'
+↓Content [ngx.components.UIDynamicElement-1762507125957]: 
+  beanData: '{"ionBean":"Content"}'
+  tagName: ion-content

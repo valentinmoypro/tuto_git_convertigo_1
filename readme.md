@@ -11,10 +11,13 @@ For more technical informations : [documentation](./project.md)
 - [Installation](#installation)
 - [Mobile Application](#mobile-application)
     - [Pages](#pages)
+        - [PageMoney](#pagemoney)
         - [PageProfile](#pageprofile)
         - [PageRoot](#pageroot)
         - [PageSearch](#pagesearch)
         - [PageWatchlist](#pagewatchlist)
+    - [Shared Components](#shared-components)
+        - [myPageHeader](#mypageheader)
 
 
 ## Installation
@@ -30,13 +33,13 @@ For more technical informations : [documentation](./project.md)
      <tr><td>To contribute</td><td>
 
      ```
-     PremierProjetOM=https://github.com/valentinmoypro/tuto_git_convertigo_1.git:branch=master
+     PremierProjetOM=https://github.com/valentinmoypro/tuto_git_convertigo_1.git:branch=masterOM
      ```
      </td></tr>
      <tr><td>To simply use</td><td>
 
      ```
-     PremierProjetOM=https://github.com/valentinmoypro/tuto_git_convertigo_1/archive/master.zip
+     PremierProjetOM=https://github.com/valentinmoypro/tuto_git_convertigo_1/archive/masterOM.zip
      ```
      </td></tr>
     </table>
@@ -49,6 +52,8 @@ Describes the mobile application global properties
 
 ### Pages
 
+#### PageMoney
+
 #### PageProfile
 
 #### PageRoot
@@ -58,6 +63,21 @@ Describes the mobile application global properties
 Page de recherche
 
 #### PageWatchlist
+
+### Shared Components
+
+#### myPageHeader
+
+**variables**
+
+<table>
+<tr>
+<th>name</th><th>comment</th>
+</tr>
+<tr>
+<td>pageTitle</td><td></td>
+</tr>
+</table>
 
 
 

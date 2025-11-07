@@ -64,10 +64,12 @@ componentScriptContent:
         '
 tplProjectName: mobilebuilder_tpl_8_3_0_ngx
 ↓Menu [ngx.components.UIDynamicMenu-1500890597895]: 🗏 mobileMenus/Menu.yaml
+↓myPageHeader [ngx.components.UISharedRegularComponent-1762507318366]: 🗏 mobileSharedComponents/myPageHeader.yaml
 ↓PageRoot [ngx.components.PageComponent-1762443205986]: 🗏 mobilePages/PageRoot.yaml
 ↓PageSearch [ngx.components.PageComponent-1500538678074]: 🗏 mobilePages/PageSearch.yaml
 ↓PageWatchlist [ngx.components.PageComponent-1762443231748]: 🗏 mobilePages/PageWatchlist.yaml
 ↓PageProfile [ngx.components.PageComponent-1762443248698]: 🗏 mobilePages/PageProfile.yaml
+↓PageMoney [ngx.components.PageComponent-1762507125978]: 🗏 mobilePages/PageMoney.yaml
 ↓Style [ngx.components.UIStyle-1491635462437]: 
   comment: You can add some global application styles here
   styleContent: 
