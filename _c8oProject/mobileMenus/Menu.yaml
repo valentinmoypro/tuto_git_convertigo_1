@@ -29,28 +29,8 @@ tagName: ion-menu
             - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
             - com.twinsoft.convertigo.beans.common.FormatedContent: 
               →: |
-                '/**
-                 * Custom properties (sometimes referred to as CSS variables or cascading variables)
-                 * are entities defined by CSS authors that contain specific values to be reused throughout a document.
-                 * They are set using custom property notation, e.g.: --main-color: black;
-                 * and are accessed using the var() function, e.g.: color: var(--main-color);
-                 * You can find below your component''s properties you can customize within the page.
-                 * If you''d like to make some customizations for whole app, please see your app Style & Theme components.
-                 * For more informations see https://ionicframework.com/docs/theming.
-                **/
-                //--background	//Background of the toolbar
-                //--border-color	//Color of the toolbar border
-                //--border-style	//Style of the toolbar border
-                //--border-width	//Width of the toolbar border
-                //--color	//Color of the toolbar text
-                //--min-height	//Minimum height of the toolbar
-                //--opacity	//Opacity of the toolbar background
-                //--padding-bottom	//Bottom padding of the toolbar
-                //--padding-end	//Right padding if direction is left-to-right, and left padding if direction is right-to-left of the toolbar
-                //--padding-start	//Left padding if direction is left-to-right, and right padding if direction is right-to-left of the toolbar
-                //--padding-top	//Top padding of the toolbar
-                	margin-left: 22px;
-                	font-size: 10px
+                '    margin-left: 22px;
+                    font-size: 10px;
                 '
 ↓Content [ngx.components.UIDynamicElement-1500890742326]: 
   beanData: '{"ionBean":"Content"}'
